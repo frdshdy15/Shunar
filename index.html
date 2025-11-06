@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Selamat 18 Tahun, Shunnar 🎉</title>
+
+  <!-- Font (Google) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="bg-blobs" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="logo">
+        <div class="badge">18</div>
+        <div class="title">
+          <div class="greeting">Selamat 18 Tahun,</div>
+          <div class="name">Shunnar 🎉</div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="confettiBtn" class="btn btn-ghost">Pesta Konfeti</button>
+        <button id="revealBtn" class="btn">Tampilkan Efek Ketik</button>
+      </div>
+    </header>
+
+    <main class="card" id="card">
+      <div class="meta-row">
+        <div class="from">Dari <strong>Anin</strong></div>
+        <div class="date">November 06, 2025</div>
+      </div>
+
+      <!-- Message area: content inserted by JS to preserve exact text -->
+      <div id="message" class="message" tabindex="0" aria-live="polite"></div>
+
+      <div class="controls">
+        <button id="downloadBtn" class="btn btn-light">Simpan sebagai .txt</button>
+        <button id="shareBtn" class="btn btn-light">Bagikan link</button>
+      </div>
+
+      <div class="footer">
+        <div>Dariku, Anin ❤️</div>
+        <div class="hint">Tip: tekan "Pesta Konfeti" atau ketuk kartu untuk efek lucu</div>
+      </div>
+    </main>
+
+    <canvas id="confettiCanvas" class="confetti"></canvas>
+    <!-- floating hearts (decorative) -->
+    <div id="floatContainer" class="float-container" aria-hidden="true"></div>
+  </div>
+
+  <!-- source text is injected from JS for exact preservation -->
+  <script src="script.js"></script>
+</body>
+</html>
