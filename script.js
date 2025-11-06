@@ -30,7 +30,7 @@ const confettiCanvas = document.getElementById('confettiCanvas');
 
 /* ---------- initial render (static) ---------- */
 /* show a shortened preview immediate for fast load on mobile */
-const PREVIEW = SOURCE_TEXT.split('\n').slice(0,6).join('\n') + '\n\n... (ketuk "Tampilkan Efek Ketik" untuk seluruh pesan)';
+const PREVIEW = SOURCE_TEXT.split('\n').slice(0,6).join('\n') + '\n\n... (ketuk tombol "Kepo" untuk seluruh pesan)';
 messageEl.textContent = PREVIEW;
 
 /* ---------- typewriter reveal ---------- */
